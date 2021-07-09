@@ -32,7 +32,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'The software will now be deployed!'
-                sh "mv /* /var/www/node-app"
+                sh "cp models,routes,.env,index.js,package.json  /var/www/node-app"
             }
         }
     }    
